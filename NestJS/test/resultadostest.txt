@@ -1,0 +1,120 @@
+ab -n 1000 -c 10 -T application/json     -H "Cookie: csrftoken=Zty6TIJBuQjd2EVT89JXsj7rGfecshm1"     -p query.json     http://127.0.0.1:3000/graphql/
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /graphql/
+Document Length:        701 bytes
+
+Concurrency Level:      10
+Time taken for tests:   2.980 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      935000 bytes
+Total body sent:        304000
+HTML transferred:       701000 bytes
+Requests per second:    335.60 [#/sec] (mean)
+Time per request:       29.797 [ms] (mean)
+Time per request:       2.980 [ms] (mean, across all concurrent requests)
+Transfer rate:          306.44 [Kbytes/sec] received
+                        99.63 kb/s sent
+                        406.07 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:     6   29   8.7     28      87
+Waiting:        5   28   8.4     27      86
+Total:          6   30   8.7     28      88
+
+Percentage of the requests served within a certain time (ms)
+  50%     28
+  66%     31
+  75%     33
+  80%     34
+  90%     39
+  95%     43
+  98%     56
+  99%     67
+ 100%     88 (longest request)
+
+
+ con cache:
+
+  ab -n 1000 -c 10 -T application/json     -H "Cookie: csrftoken=Zty6TIJBuQjd2EVT89JXsj7rGfecshm1"     -p query.json     http://127.0.0.1:3000/graphql/
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /graphql/
+Document Length:        701 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1.941 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      935000 bytes
+Total body sent:        304000
+HTML transferred:       701000 bytes
+Requests per second:    515.19 [#/sec] (mean)
+Time per request:       19.410 [ms] (mean)
+Time per request:       1.941 [ms] (mean, across all concurrent requests)
+Transfer rate:          470.42 [Kbytes/sec] received
+                        152.95 kb/s sent
+                        623.36 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5   19   4.2     18      37
+Waiting:        4   19   4.2     18      37
+Total:          5   19   4.2     18      37
+
+Percentage of the requests served within a certain time (ms)
+  50%     18
+  66%     20
+  75%     21
+  80%     21
+  90%     25
+  95%     28
+  98%     33
+  99%     35
+ 100%     37 (longest request)
+ 

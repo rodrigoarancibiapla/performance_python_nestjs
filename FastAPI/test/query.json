@@ -1,0 +1,4 @@
+{
+    "query": "query { allClientes { id nombre email totalFacturas facturas { id total fecha } }  }"
+  }
+  
