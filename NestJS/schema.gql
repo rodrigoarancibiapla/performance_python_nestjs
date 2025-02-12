@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Factura {
+  id: Int!
+  total: Float!
+  fecha: DateTime!
+  cliente: ClienteModel!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type ClienteModel {
+  id: Int!
+  nombre: String!
+  email: String!
+  facturas: [Factura!]
+  totalFacturas: Float
+}
+
+type Query {
+  allClientes: [ClienteModel!]!
+  allFacturas: [Factura!]!
+}
+
+type Mutation {
+  crearCliente(nombre: String!, email: String!): ClienteModel!
+  crearFactura(clienteId: Int!, total: String!): Factura!
+}
